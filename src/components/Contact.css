@@ -1,0 +1,145 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+}
+
+.contact-subtitle {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.contact-desc {
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-1);
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-detail a, .contact-detail span {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.contact-detail a:hover {
+  color: var(--accent-1);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: var(--accent-gradient);
+  transform: translateY(-3px);
+  border-color: transparent;
+}
+
+.contact-form-wrapper {
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.submit-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem !important;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}
